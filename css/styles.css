@@ -1,0 +1,931 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* body {
+  padding: 10px 50px;
+} */
+
+a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 10px;
+  background-color: white;
+  color: black;
+  border-bottom: 2px solid #1c4587;
+}
+
+.logo img {
+  height: 100px;
+  width: auto;
+}
+
+.welcome-message h1 {
+  font-size: 18px;
+  color: #1c4587;
+}
+
+.welcome-message p {
+  font-size: 18px;
+  color: #1c4587;
+}
+
+.actions {
+  display: flex;
+  gap: 20px;
+}
+
+.action-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.action-item a {
+  color: #1c4587;
+}
+
+.action-item a:hover {
+  color: #0069d9;
+}
+
+nav {
+  background-color: black;
+  padding: 5px;
+  width: auto;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar ul li {
+  position: relative;
+}
+
+.navbar ul li a {
+  padding: 0px 20px;
+  color: #fff;
+  display: block;
+  text-transform: uppercase;
+}
+
+.navbar ul li a:hover {
+  color: #cce5ff;
+}
+
+.outer-border {
+  border: 1px solid #1c4587;
+  padding: 20px;
+  margin: 0 20px 0 20px;
+  background-color: white;
+  box-shadow: 10 10 10px rgba(10, 10, 10, 10);
+}
+
+.inner-border {
+  border: 1px solid #0069d9;
+  padding: 10px;
+  margin-bottom: 20px;
+  
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: lightgrey;
+  padding: 10px;
+}
+
+.left-text {
+  color: #1c4587;
+  font-size: 18px;
+}
+
+.right-text-container {
+  text-align: right;
+}
+
+.right-text {
+  color: #1c4587;
+  font-size: 18px;
+}
+
+.address {
+  color: #333;
+  font-size: 16px;
+}
+
+/* ---------------customer information---------- */
+/* --------------------multistep customer info----------------------------- */
+/* Reset and Basic Styles */
+* {
+  box-sizing: border-box;
+}
+
+/* body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  padding: 20px;
+} */
+
+/* Form Container */
+.form-container {
+  max-width: 950px;
+  margin: auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(10, 10, 10, 10);
+
+}
+
+
+/* Form Steps */
+/* .form-step {
+  display: none;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.form-step.active {
+  display: block;
+} */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Floating Labels */
+.form-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 10px 10px 10px 10px;
+  font-size: 16px;
+  /* border: 1px solid #ccc; */
+  /* border-radius: 4px; */
+  outline: none;
+  transition: border-color 0.3s;
+  border: none;
+  border-bottom: 2px solid oldlace;
+  background-color: #fff;
+}
+#investigator-id{
+  width: 60%;
+}
+#remarks{
+width: 100%;
+}
+#customer-dob,
+#sale-by
+ {
+  width: 70%;
+}
+#investigator-id,
+#investigation-note
+{
+  border-bottom: 2px solid oldlace;
+}
+select:hover{
+  color: rgba(0, 0, 255, 0.434);
+
+}
+#second-guarantor-national-id{
+  width: 200px;
+}
+#purchaser-bin
+{
+  margin-right: 635px;
+  width: 30%;
+}
+#nominee-national-id
+{
+  width: 180px;
+}
+#first-guarantor-relation,
+#first-guarantor-mobile,
+#first-guarantor-national-id,
+#nominee-mobile,
+#nominee-relation{
+  width: 100%;
+}
+#second-guarantor-relation{
+  width: 80%;
+}
+
+#national-id,
+
+#investigation-note,
+#kisti-card-no,
+#account-no,
+#credit-limit
+
+{
+  width:80%;
+}
+#first-guarantor-employee-id
+{
+width: 100%;
+}
+#second-guarantor-mobile,
+#mobile-no,
+#second-guarantor-employee-id{
+  width: 80%;
+}
+
+/* 
+#nominee-national-id{
+  padding: 18px;
+} */
+#nominee-dob
+ {
+  width: 80%;
+}
+#nominee-address,
+#customer-address,
+#first-guarantor-address,
+#second-guarantor-address
+{
+  width: 100%;
+}
+
+#first-guarantor-employee-id,
+#first-guarantor-national-id,
+#second-guarantor-employee-id,
+#second-guarantor-national-id{
+  border-bottom: 2px solid oldlace;
+}
+#kisti-card-no:focus,
+#first-guarantor-employee-id:focus,
+#first-guarantor-national-id:focus,
+#second-guarantor-employee-id:focus,
+#second-guarantor-national-id:focus,
+#investigator-id:focus,
+#investigation-note:focus{
+  border-bottom: 2.5px solid rgba(0, 0, 255, 0.434);
+}
+
+#kisti-card-no,
+#customer-name,
+#first-guarantor-name,
+#second-guarantor-name,
+#nominee-name
+ {
+  width: 100%;
+}
+
+
+
+
+
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: rgba(0, 0, 255, 0.434);
+  border-bottom: 2.5px solid rgba(0, 0, 255, 0.434);
+}
+.form-group label {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  background-color: #fff;
+  padding: 0 5px;
+  color: #999;
+  transition: all 0.3s ease;
+  pointer-events: none;
+  font-weight: bold;
+}
+
+.form-group input:focus + label,
+.form-group input:not(:placeholder-shown) + label,
+.form-group textarea:focus + label,
+.form-group textarea:not(:placeholder-shown) + label,
+.form-group select:focus + label,
+.form-group select:not([value=""]) + label {
+  top: -5px;
+  font-size: 12px;
+  color: rgba(0, 0, 255, 0.434);
+}
+
+/* Buttons */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.btn:hover:not(:disabled) {
+  background-color: #45a049;
+}
+
+/* Small text */
+small {
+  display: block;
+  color: #666;
+  font-size: 12px;
+  margin-top: -0px;
+}
+
+/* Required field */
+.required {
+  color: red;
+}
+
+/* Invalid field */
+.invalid {
+  border-color: red;
+}
+/* ------------------------------customer -info--- */
+
+/* Section within the form step */
+.form-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Adjust spacing between fields as needed */
+  margin-bottom: 10px; /* Spacing between sections */
+  justify-content: space-evenly;
+  align-items: center; 
+}
+
+/* Form field container */
+.form-field {
+  flex: 1 1 calc(15% - 15px);
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.form-field1 {
+  flex: 1 1 calc(25% - 25px);
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.flex-address{
+  margin-top: -20px;
+}
+.form-group #second-guarantor-national-id, #purchaser-bin{
+  margin-top: -40px;
+
+}
+
+/* Form group to apply floating label styles */
+#step-1 .form-group {
+  position: relative;
+  margin-bottom: 0px;
+}
+
+
+i#step-1 > input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  /* border-radius: 4px; */
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #000;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #007bff; /* Adjust focus color as needed */
+  outline: none;
+}
+
+#step-1 > label {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  font-size: 14px;
+  color: #555;
+  pointer-events: none;
+  transition: 0.2s ease all;
+}
+/* -------------nominee---------- */
+/* .form-step {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+} */
+
+.nominee-options {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 50px;
+}
+
+.nominee-options label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.nominee-options input[type="radio"] {
+  margin-right: 10px;
+  border: none;
+  border-bottom: 1px solid #000;
+}
+
+/* .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.required {
+  color: red;
+} */
+
+.form-row {
+  
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Adjust spacing between fields as needed */
+    margin-bottom: 20px; /* Spacing between sections */
+    justify-content: space-evenly;
+    align-items: center; 
+  
+}
+
+
+.form-row .form-group {
+  flex: 1 1 calc(15% - 15px);
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 30px;}
+
+/* .form-row .form-group:nth-child(odd) {
+  margin-right: 20px;
+} */
+
+/* ----------------customer family info-------------- */
+
+/* .form-step {
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: white;
+} */
+
+h3 {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+h4{
+  font-size: 18px;
+}
+
+.navbar-content {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  gap: 2px;
+}
+
+.navbar-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-item label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.navbar-item input,
+.navbar-item select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.action-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.action-logo img {
+  width: 40px;
+  height: 40px;
+}
+#step-4 label {
+  font-size: 15px;
+}
+#step-4 #same-as {
+  width: 100px;
+}
+#step-4 #number,
+#name,
+#father-name,
+#mother-name,
+#mobile,
+#relation,
+#action {
+  width: 100px;
+}
+
+/* .navbar-form {
+  max-width: 700px;
+  margin: auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+.form-step > h3 {
+  margin: 0 0 30px;
+}
+.navbar-header h3 {
+  margin: 0 0 30px;
+  font-size: 24px;
+}
+
+.navbar-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.navbar-item,
+.navbar-item-a {
+  flex: 1 1 calc(33% - 30px);
+  margin-bottom: 15px;
+}
+
+.navbar-item label,
+.navbar-item-a label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.navbar-item input,
+.navbar-item select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  border: none;
+  border-bottom: 1px solid #000; 
+}
+#nominee-national-id{
+  padding: 20px;
+  width: 70%;
+}
+.action-logo {
+  display: flex;
+  align-items: center;
+}
+
+.action-logo img {
+  width: 24px;
+  height: 24px;
+} */
+
+/* --------------------customers opinion--------------- */
+
+/* .customer-opinion-form {
+  max-width: 700px;
+  margin: auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+} */
+
+#step-5 h2 {
+  margin: 0 0 30px;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.form-question {
+  margin-bottom: 15px;
+}
+
+.form-question #radio {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.options {
+  display: flex;
+  gap: 10px;
+  font-weight: none;
+  padding-left: 15px;
+}
+
+/* .options input[type="radio"] {
+  margin-right: 5px;
+  font-weight: none;
+
+} */
+/* -------------custom radio-------------- */
+
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 20px;
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: grey;
+  border-radius: 50%;
+  margin-bottom: 20px;
+
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #21f33d;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+ 	top: 5px;
+	left: 4.5px;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: white;
+}
+
+
+
+
+/* ---------------------custom radio--- */
+
+.options label {
+  margin-right: 15px;
+}
+
+form select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+#profession {
+  width: 30%;
+  margin-left: 18px;
+  color: #45a049;
+}
+/* -----------------Investigator------------ */
+
+/* General Floating Label Styles */
+.form-investigetor-group {
+  position: relative;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.flex-investigator{
+  display: flex;
+}
+
+.form-investigetor-group input,
+.form-investigetor-group textarea,
+.form-investigetor-group select {
+  width: 100%;
+  padding: 12px 12px 12px 12px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid oldlace;
+}
+
+.form-investigetor-group label {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  font-size: 16px;
+  color: #999;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+.form-investigetor-group input:focus,
+.form-investigetor-group textarea:focus,
+.form-investigetor-group select:focus {
+  border-bottom: 2.5px solid rgba(0, 0, 255, 0.434);
+}
+.form-investigetor-group input:focus + label,
+.form-investigetor-group textarea:focus + label,
+.form-investigetor-group select:focus + label,
+.form-investigetor-group input:not(:placeholder-shown) + label,
+.form-investigetor-group textarea:not(:placeholder-shown) + label,
+.form-investigetor-group select:not(:placeholder-shown) + label {
+  top: -15px;
+  left: 8px;
+  font-size: 12px;
+  color: rgba(0, 0, 255, 0.434);; /* Change to your desired focus color */
+}
+
+/* Add some styling for textarea to accommodate floating label */
+.form-investigetor-group textarea {
+  /* min-height: 100px; */
+  resize: vertical;
+}
+fieldset {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.form-question #radio {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.form-question #profession{
+  width: 10%;
+}
+
+/* Dropdown Button */
+/* Dropdown Button */
+.dropbtn {
+  background-color: white;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  width: 70%;
+}
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 70%;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Hover effects */
+.dropdown-content a:hover {
+  background-color: lightgreen;
+}
+
+/* Show dropdown content on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* ----------footer------- */
+.footer {
+  text-align: center;
+}
+.footer legend {
+  font-weight: bold;
+  color: black;
+}
+.footer p {
+  color: grey;
+}
+.footer #version {
+  color: red;
+}
+/* ---------------- */
+
+
+input::placeholder {
+    color: transparent; /* Hide placeholder initially */
+    transition: color 0.2s;
+}
+
+input:focus::placeholder {
+    color: #d9534f; /* Show placeholder on focus */
+}
+textarea::placeholder {
+  color: transparent; /* Hide placeholder initially */
+  transition: color 0.2s;
+}
+
+textarea:focus::placeholder {
+  color: #d9534f; /* Show placeholder on focus */
+}
+
+.error-message {
+    color: #d9534f;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+}
